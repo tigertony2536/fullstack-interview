@@ -1,0 +1,22 @@
+{
+  "discounts": [
+    {
+      "id": "1",
+      "code": "10%Off",
+      "discount": 10,
+      "type": "percentage"
+    },
+    {
+      "id": "2",
+      "code": "200OFF",
+      "discount": 200,
+      "type": "amount"
+    },
+    {
+      "id": "3",
+      "code": "50%Off",
+      "discount": 50,
+      "type": "percentage"
+    }
+  ]
+}

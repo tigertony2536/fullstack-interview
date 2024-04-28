@@ -1,0 +1,34 @@
+[
+  {
+    "id": "1",
+    "title": "Siam Amazing Park",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pharetra est elementum erat dapibus, sit amet tincidunt metus egestas. ",
+    "img": "/assets/tickets/siam.jpeg",
+    "price": 1000,
+    "inCart": 0
+  },
+  {
+    "id": "2",
+    "title": "Safari World",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pharetra est elementum erat dapibus, sit amet tincidunt metus egestas. ",
+    "img": "/assets/tickets/safari.jpeg",
+    "price": 1200,
+    "inCart": 3
+  },
+  {
+    "id": "3",
+    "title": "Dream World",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pharetra est elementum erat dapibus, sit amet tincidunt metus egestas. ",
+    "img": "/assets/tickets/dream.jpeg",
+    "price": 1500,
+    "inCart": 0
+  },
+  {
+    "id": "4",
+    "title": "Sea Life Bangkok Ocean World",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pharetra est elementum erat dapibus, sit amet tincidunt metus egestas. ",
+    "img": "/assets/tickets/sea.jpeg",
+    "price": 2000,
+    "inCart": 0
+  }
+]
