@@ -10,7 +10,7 @@ export enum ActionType {
 type SortingType = "title" | "price";
 type SortingDirection = boolean;
 
-interface TicketAction {
+export interface TicketAction {
   type: ActionType;
   payload: any;
 }

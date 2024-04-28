@@ -8,6 +8,7 @@ import { ticketReducer } from "../reducder/ticketReducer";
 import { ActionType } from "../reducder/ticketReducer";
 import { SortDown, SortUp } from "react-bootstrap-icons";
 import { sortTickets } from "../utils/sortTicket";
+import { SearchBar } from "./SearchBar";
 
 const initialState: TicketState = {
   searchTitle: "",
@@ -51,23 +52,7 @@ export const TicketBoard = ({ props }: { props: TicketBoardProps }) => {
     <div className="min-w-[450px] w-full p-2 border border-black/25 bg-white rounded-md">
       <h4 className="mt-4 mb-4 font-semibold">TICKETS</h4>
       <div className="flex justify-center gap-8 mb-4">
-        <div>
-          <label
-            htmlFor="search"
-            className="mr-2">
-            Search:
-          </label>
-          <input
-            onChange={(e) => {
-              dispatch({
-                type: ActionType.SearchTitle,
-                payload: e.target.value,
-              });
-            }}
-            name="search"
-            className="h-[1.5rem] w-36 border border-black/25 pl-2 rounded-sm"
-          />
-        </div>
+        <SearchBar dispatch={dispatch} />
         <div className="flex gap-2">
           <div>
             <label
