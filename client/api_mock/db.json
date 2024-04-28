@@ -1,0 +1,56 @@
+{
+  "discounts": [
+    {
+      "id": "1",
+      "code": "10%Off",
+      "discount": 10,
+      "type": "percentage"
+    },
+    {
+      "id": "2",
+      "code": "200OFF",
+      "discount": 200,
+      "type": "amount"
+    },
+    {
+      "id": "3",
+      "code": "50%Off",
+      "discount": 50,
+      "type": "percentage"
+    }
+  ],
+  "tickets": [
+    {
+      "id": "1",
+      "title": "Siam Amazing Park",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pharetra est elementum erat dapibus, sit amet tincidunt metus egestas. ",
+      "img": "/assets/tickets/siam.jpeg",
+      "price": 1000,
+      "inCart": 0
+    },
+    {
+      "id": "2",
+      "title": "Safari World",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pharetra est elementum erat dapibus, sit amet tincidunt metus egestas. ",
+      "img": "/assets/tickets/safari.jpeg",
+      "price": 1200,
+      "inCart": 3
+    },
+    {
+      "id": "3",
+      "title": "Dream World",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pharetra est elementum erat dapibus, sit amet tincidunt metus egestas. ",
+      "img": "/assets/tickets/dream.jpeg",
+      "price": 1500,
+      "inCart": 0
+    },
+    {
+      "id": "4",
+      "title": "Sea Life Bangkok Ocean World",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pharetra est elementum erat dapibus, sit amet tincidunt metus egestas. ",
+      "img": "/assets/tickets/sea.jpeg",
+      "price": 2000,
+      "inCart": 0
+    }
+  ]
+}
