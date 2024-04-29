@@ -48,7 +48,7 @@ export const CartFooter: React.FC<CardFooterProps> = ({
     if (discount && discount.discount?.type === "percentage") {
       setDiscountHelper(discount.discount, setDiscount, total);
     }
-  }, [tickets, discount, total]);
+  }, [tickets, total]);
 
   useEffect(() => {
     if (discount && discount.discount?.type === "percentage") {
@@ -57,7 +57,7 @@ export const CartFooter: React.FC<CardFooterProps> = ({
   }, [total]);
 
   return (
-    <div className="items-center w-full h-full flex flex-col justify-end pt-8 pb-4 text-h6">
+    <div className="flex flex-col items-center justify-end w-full h-full pt-8 pb-4 text-h6">
       <Card
         cardClass="flex justify-between h-12 "
         left={<div className="flex justify-start pl-8">Total</div>}
@@ -78,11 +78,12 @@ export const CartFooter: React.FC<CardFooterProps> = ({
                     discountsData,
                     setDiscount,
                     setDiscountInput,
-                    total
+                    total,
+                    discount.discount
                   );
                 }
               }}
-              className="h-6 pl-4 border min-w-32 max-w-64 border-black/25 rounded-sm"></input>
+              className="h-6 pl-4 border rounded-sm min-w-32 max-w-64 border-black/25"></input>
           </>
         }
         right={

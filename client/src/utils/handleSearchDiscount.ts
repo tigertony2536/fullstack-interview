@@ -7,7 +7,8 @@ export const handleSearchDiscount = async (
   discounts: Discounts[],
   setDiscount: React.Dispatch<React.SetStateAction<DiscountState>>,
   setDiscountInput: React.Dispatch<React.SetStateAction<string>>,
-  total: number
+  total: number,
+  discount: Discounts | null
 ) => {
   const target = e.target as HTMLInputElement;
   const serachParams = target?.value;
@@ -16,7 +17,12 @@ export const handleSearchDiscount = async (
     (discount) => discount.code.toLowerCase() === serachParams.toLowerCase()
   );
   console.log(findDiscount);
-  if (findDiscount) {
+  if (findDiscount === undefined) {
+    setDiscount({
+      discountAmount: 0,
+      discount: discount,
+    });
+  } else {
     setDiscountHelper(findDiscount, setDiscount, total);
   }
 };
