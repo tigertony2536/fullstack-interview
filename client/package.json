@@ -11,7 +11,6 @@
     "@types/react-dom": "^18.3.0",
     "autoprefixer": "^10.4.19",
     "axios": "^1.6.8",
-    "bootstrap-icons": "^1.11.3",
     "json-server": "^1.0.0-alpha.23",
     "postcss-cli": "^11.0.0",
     "react": "^18.3.1",
@@ -19,7 +18,7 @@
     "react-dom": "^18.3.1",
     "react-test-renderer": "^18.3.1",
     "tailwindcss": "^3.4.3",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^3.5.2"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -52,9 +51,9 @@
     "jest-environment-jsdom": "^29.7.0",
     "prettier": "^3.2.5",
     "prettier-plugin-tailwindcss": "^0.5.14",
+    "react-scripts": "5.0.1",
     "ts-jest": "^29.1.2",
     "ts-node-dev": "^2.0.0",
-    "typescript": "^5.4.5",
-    "react-scripts": "5.0.1"
+    "typescript": "^5.4.5"
   }
 }

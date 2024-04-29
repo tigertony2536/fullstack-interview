@@ -2,6 +2,9 @@
   "name": "server",
   "version": "1.0.0",
   "main": "index.ts",
+  "prisma": {
+    "seed": "ts-node prisma/seed.ts"
+  },
   "scripts": {
     "build": "npx tsc",
     "start": "tsc && node dist/app.js",
