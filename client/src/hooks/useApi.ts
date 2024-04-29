@@ -19,8 +19,11 @@ export const useApi = <T>(
     try {
       Setloading(true);
       const res: AxiosResponse<ApiResponse<T>> = await axios(url, options);
-      Setdata(res.data.data);
-      if (res.data.data) {
+      if (res.data.data as ApiResponse<T>) {
+        Setdata(res.data.data);
+        Setloading(false);
+      } else {
+        Setdata(res.data as T);
         Setloading(false);
       }
     } catch (error) {
