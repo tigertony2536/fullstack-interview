@@ -71,7 +71,7 @@ export const Cart: React.FC<CartProps> = ({ tickets, discounts }) => {
                             onClick={() => {
                               handleButton(ticket.id, "decrement", fetchTicket);
                             }}
-                            className="font-semibold border border-black/25 bg-black/5 text-h4 size-8 ml-2">
+                            className="ml-2 font-semibold border border-black/25 bg-black/5 text-h4 size-8">
                             -
                           </Button>
                           <p className="text-paragraph">{ticket.inCart}</p>
@@ -79,7 +79,7 @@ export const Cart: React.FC<CartProps> = ({ tickets, discounts }) => {
                             onClick={() => {
                               handleButton(ticket.id, "increment", fetchTicket);
                             }}
-                            className="font-semibold border border-black/25 bg-black/5 text-h4 size-8 mr-2">
+                            className="mr-2 font-semibold border border-black/25 bg-black/5 text-h4 size-8">
                             +
                           </Button>
                         </>

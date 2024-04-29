@@ -24,9 +24,9 @@ function App() {
   );
 
   return (
-    <div className="text-center flex flex-col">
+    <div className="flex flex-col justify-between h-full text-center">
       <Header />
-      <div className="flex flex-col md:flex-row justify-between p-8 gap-8">
+      <div className="flex flex-col h-full gap-8 p-8 md:flex-row">
         <TicketBoard props={ticketResponse} />
         <Cart
           tickets={ticketResponse}
