@@ -6,14 +6,22 @@ import React from "react";
 import { TicketBoard } from "../components/TicketBoard";
 import { render, screen } from "@testing-library/react";
 import Data from "../../api_mock/db.json";
-import { TicketBoardProps } from "../utils/model";
+import { TicketBoardProps, TicketData } from "../utils/model";
 import "@testing-library/jest-dom";
+import { Ticket } from "react-bootstrap-icons";
 
 const mockFetchData = jest.fn();
 mockFetchData.mockReturnValue(Promise<void>);
 
+const tickets = Data.tickets;
+
+const newTickets = tickets.map((ticket) => ({
+  ...ticket,
+  id: ticket.id.toString(),
+}));
+
 const props: TicketBoardProps = {
-  data: Data.tickets,
+  data: newTickets,
   loading: false,
   error: null,
   fetchdata: mockFetchData,
