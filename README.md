@@ -50,15 +50,19 @@ PORT= <YOUR_PORT>
 DATABASE_URL=<YOUR_DATABASE_URL>
 ```
 
-We use ORM for convinient's sake. Run these command to start prisma and connect it to .env files in your root.
+We use ORM for convinient's sake. Run these command to start prisma and connect it to .env files in your root. Also, prisma will migrate and seeding mock data from db.json file to your database automatically. 
 
 ```
 ./server
 npx prisma generate
 ```
 
-You can start Api server now!.
+Start Api server and your app!.
 
 ```
+./server
 npm run dev
+
+./client
+npm start
 ```
