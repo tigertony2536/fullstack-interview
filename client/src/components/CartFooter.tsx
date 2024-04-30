@@ -45,10 +45,7 @@ export const CartFooter: React.FC<CardFooterProps> = ({
         setGrandTotal(total - discount.discountAmount);
       }
     }
-    if (discount && discount.discount?.type === "percentage") {
-      setDiscountHelper(discount.discount, setDiscount, total);
-    }
-  }, [tickets, total]);
+  }, [tickets, total, discount.discountAmount]);
 
   useEffect(() => {
     if (discount && discount.discount?.type === "percentage") {
