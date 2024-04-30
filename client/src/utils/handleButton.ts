@@ -1,5 +1,5 @@
 import { TicketData } from "../utils/model";
-import axios from "axios";
+import axios, { AxiosResponse } from "axios";
 
 type action = "increment" | "decrement";
 
@@ -8,11 +8,11 @@ export const handleButton = async (
   action: action,
   fetchCartTicket: () => Promise<void>
 ) => {
-  const getResponse = await axios.get<TicketData>(
+  const getResponse = await axios.get<AxiosResponse<TicketData>>(
     `http://localhost:8000/tickets/${ticketId}`
   );
 
-  let amount = Number(getResponse.data.inCart);
+  let amount = Number(getResponse.data.data.inCart);
   if (action === "increment") {
     amount = amount + 1;
   } else if (action === "decrement") {

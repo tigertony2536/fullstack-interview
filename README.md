@@ -46,7 +46,7 @@ json-server --port 8000 --watch ./api_mock/db.json
 ```
 2. Database
 This project use Postres SQL
-- Create .env file and put these variables
+- Create .env file and create Port and DATABASE_URL variables for connecting to database. If you use docker compose file in this project to create database container, you can use copy this
 ```
 ./.env
 PORT=8000
@@ -55,43 +55,8 @@ DATABASE_URL="postgresql://myuser:mypassword@localhost:5432/mydb?schema=public"
 ```
 - Connect prisma ORM to .env files in your root and start Api server.
 ```
-./client
+./server
 npx prisma generate
 npm run dev
 ```
 
-
-## Features
-
-- Completed API mock (both discount and ticket).
-- Create hook for the api (both discount and ticket).
-- Can add product.
-- Can adjust quantity.
-- Calculate discount.
-- Display total price correctly.
-- (Extra) Create API server (By convert this prodject into next.js is fine).
-
-## Installation
-To run this project on local. Follow this instruction.
-### Clone this repository 
-```
-///
-git clone https://github.com/tigertony2536/fullstack-interview.git
-///
-npm install
-```
-
-### Set up database
-There are 2 choices you can choose
-1. Database
-```
-///
-git clone https://github.com/tigertony2536/fullstack-interview.git
-///
-npm install
-```
-1. Mock Api
-- This projects using mock api in developement phase using json-server library. 
-```
-json-server --watch ./api_mock/index.ts --port <your port>
-```
